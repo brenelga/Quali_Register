@@ -61,7 +61,34 @@ int main() {
 							do{
 								cout<<"--Registro de Estudiantes-- \n";
 								cout<<"-------Quali-Register------- \n";
+								cout<<"\n";
 								cout<<"Ingrese el primer apellido \n";
+								cin>>ApAl;
+								cout<<"Ingrese el segundo apellido \n";
+								cin>>AmAl;
+								cout<<"Ingrese el nombre \n";
+								cin>>nAl;
+								cout<<"Ingrese el grado \n";
+								cin>>grado;
+								cout<<"Ingrese el grupo \n";
+								cin>>grupo;
+								cout<<"Registro guardado de manera exitosa \n";
+								cout<<"Desea realizar otro registro \n";
+								cout<<"si \n";
+								cout<<"no \n";
+								cin>>resp;
+							} while (resp=="si" || resp=="Si" || resp=="SI" || resp=="sI");
+						break;
+						case 2:
+							do{
+								cout<<"--Registro de Evidencias-- \n";
+								cout<<"------Quali-Register------ \n";
+								cout<<"\n";
+								cout<<"Ingresa el titulo de la evidencia \n";
+								cin>>Evid;
+								cout<<"Ingresa la asignatura \n";
+								cin>>Asig;
+								
 							}
 					}
 					}
