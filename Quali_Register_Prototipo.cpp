@@ -20,3 +20,21 @@ int main() {
 		cout<<"\n";
 		cout<<"Menu Principal";
 		cout<<"1: Registro de Usuarios \n";
+		cout<<"2: Inicio de Sesion \n";
+		cout<<"3: Ayuda \n"
+		cout<<"4: Datos de Contacto \n";
+		cout<<"5: salir \n";
+		cin>>menu;
+		switch(menu){
+			case 1:
+				cout<<"Ingrese su primer apellido \n";
+				cin>>ApM;
+				cout<<"Ingrese su segundo apellido \n";
+				cin>>AmM;
+				cout<<"Ingrese su nombre \n";
+				cin>>Nm;
+				cout>>
+			break;
+		}
+	}
+}
