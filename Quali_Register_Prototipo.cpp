@@ -11,7 +11,7 @@ using namespace std;
 int main() {
 	int calif, grado, inicio, menu; //Variables que nos guardaran las calificaciones, el grado al que le dará clase y las opciones del menu
 	short matricula; //Aqui se guardará la matrícula del alumno
-	string ApAl, AmAl, nAl, ApM, AmM, Nm, Evid, Asig, user, password;//Apellido Materno,Paterno,Nombre del Alumno; Apellido Paterno,Materno y Nombre del Maestro; Evidencia, Asignatura, usuario y contraseña
+	string ApAl, AmAl, nAl, ApM, AmM, Nm, Evid, Asig, user, password, resp;//Apellido Materno,Paterno,Nombre del Alumno; Apellido Paterno,Materno y Nombre del Maestro; Evidencia, Asignatura, usuario y contraseña
 	char grupo; //Grupo
 	do{
 		cout<<"----------------------------- \n";
@@ -33,7 +33,39 @@ int main() {
 				cin>>AmM;
 				cout<<"Ingrese su nombre \n";
 				cin>>Nm;
-				cout>>
+				cout>>"Ingrese su user \n";
+				cin>>user;
+				cout<<"Ingrese su password \n";
+				cin>>password;
+				cout<<"Usuario creado de manera exitosa \n";
+			break;
+			case 2:
+				cout<<"Ingrese su usuario \n";
+				cin>>user;
+				cout<<"Ingrese su password \n";
+				cin>>password;
+				if(user==user && password==password){
+					do{
+					cout<<"Bienvenido "<<user<<"\n";
+					cout<<"--------------------------------- \n";
+					cout<<"--------Menu Principal----------- \n";
+					cout<<"--------------------------------- \n";
+					cout<<"1: Registrar Alumno \n";
+					cout<<"2: Registrar Evidencia \n";
+					cout<<"3: Asignar Calificacion \n";
+					cout<<"4: Ayuda \n";
+					cout<<"Que desea hacer \n";
+					cin>>inicio;
+					switch (inicio){
+						case 1:
+							do{
+								cout<<"--Registro de Estudiantes-- \n";
+								cout<<"-------Quali-Register------- \n";
+								cout<<"Ingrese el primer apellido \n";
+							}
+					}
+					}
+				}
 			break;
 		}
 	}
