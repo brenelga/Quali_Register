@@ -9,9 +9,9 @@ TSU en Desarrollo y Gestion de Software
 #include<iostream>
 using namespace std;
 int main() {
-	int calif, grado, inicio, menu, id; //Variables que nos guardaran las calificaciones, el grado al que le dará clase y las opciones del menu
-	short matricula; //Aqui se guardará la matrícula del alumno
-	string ApAl, AmAl, nAl, ApM, AmM, Nm, Evid, Asig, user, password, resp;//Apellido Materno,Paterno,Nombre del Alumno; Apellido Paterno,Materno y Nombre del Maestro; Evidencia, Asignatura, usuario y contraseña
+	int calif, grado, inicio, menu, id; //Variables que nos guardaran las calificaciones, el grado al que le dara clase y las opciones del menu
+	short matricula; //Aqui se guardara la matricula del alumno
+	string ApAl, AmAl, nAl, ApM, AmM, Nm, Evid, Asig, user, password, resp;//Apellido Materno,Paterno,Nombre del Alumno; Apellido Paterno,Materno y Nombre del Maestro; Evidencia, Asignatura, usuario y contrasena
 	char grupo; //Grupo
 	do{
 		cout<<"----------------------------- \n";
@@ -21,7 +21,7 @@ int main() {
 		cout<<"Menu Principal";
 		cout<<"1: Registro de Usuarios \n";
 		cout<<"2: Inicio de Sesion \n";
-		cout<<"3: Ayuda \n"
+		cout << "3: Ayuda \n";
 		cout<<"4: Datos de Contacto \n";
 		cout<<"5: salir \n";
 		cin>>menu;
@@ -33,7 +33,7 @@ int main() {
 				cin>>AmM;
 				cout<<"Ingrese su nombre \n";
 				cin>>Nm;
-				cout>>"Ingrese su user \n";
+				cout<<"Ingrese su user \n";
 				cin>>user;
 				cout<<"Ingrese su password \n";
 				cin>>password;
@@ -105,7 +105,7 @@ int main() {
 								cout<<"--------Quali-Register-------- \n";
 								cout<<"\n";
 								cout<<"Ingrese la matricula del alumno \n";
-								cin<<matricula;
+								cin>>matricula;
 								cout<<"Ingrese el id de la tarea \n";
 								cin>>id;
 								cout<<"Ingrese la calificacion del estudiante \n";
@@ -122,7 +122,7 @@ int main() {
 							cout<<"-----------Menu de Registros----------------- \n";
 							cout<<"-------------Quali-Register------------------ \n";
 							do{
-								cout<<"Seleccione el menu del que desea ayuda \";
+								cout<<"Seleccione el menu del que desea ayuda \n";
 								cout<<"1: Registrar Alumno \n";
 								cout<<"2: Registrar Evidencia \n";
 								cout<<"3: Registrar Calificacion \n";
@@ -152,10 +152,10 @@ int main() {
 										cout<<"\n";
 										cout<<"Al acceder nos pedira ingresar los siguientes datos: \n";
 										cout<<"1: Matricula, nos permitira ubicar al alumno en la BDD \n";
-										cout<<"2: id de Evidencia, nos permitirá ubicar al alumno en la BDD \n";
+										cout<<"2: id de Evidencia, nos permitira ubicar al alumno en la BDD \n";
 										cout<<"3: Calificacion, la calificacion del alumno \n";
 									break;
-									default cout<<"Opcion no reconocida, intentelo de nuevo \n";
+									default: cout<<"Opcion no reconocida, intentelo de nuevo \n";
 								}
 								cout<<"Quieres intentarlo de nuevo \n";
 								cout<<"si \n";
@@ -163,15 +163,61 @@ int main() {
 								cin>>resp;
 							} while (resp=="Si" || resp=="si" || resp=="SI" || resp=="sI");
 							break;
-							default cout<<"Opcion no reconocida intentelo de nuevo \n";
+						default: cout<<"Opcion no reconocida intentelo de nuevo \n";
 					}
 					cout<<"Quieres intentarlo de nuevo \n";
 					cout<<"Si \n";
 					cout<<"No \n";
 					cin>>resp;
-					}while (resp=="Si" || resp=="si" || resp=="sI" || resp=="SI");
+					}while (resp == "Si" || resp == "si" || resp == "sI" || resp == "SI");
+				}
+				else {
+					cout << "Contrasenia y/o usuario incorrecto";
 				}
 			break;
+			case 3:
+				cout << "----Menu de Ayuda---- \n";
+				cout << "---Quali-Register---- \n";
+				cout << "\n";
+				do {
+					cout << "Seleccione la opcion deseada \n";
+					cout<<"1:Registro de Usuarios \n";
+					cout<<"2: Inicio de Sesion \n";
+					cin>>inicio;
+					switch(inicio){
+						case 1:
+							cout<<"----Registro de Usuarios---- \n";
+							cout<<"\n";
+							cout<<"Cuando inicia sesion por primera vez tendra que crear un usuario y una contrasenia para poder utilizar el programa ";
+							cout<<" y poder acceder a sus datos guardados, para ello debera completar los siguientes datos: \n";
+							cout<<"Su Primer apellido \n";
+							cout<<"Su segundo apellido \n";
+							cout<<"Su nombre \n";
+							cout<<"Debera crear un nombre de usuario para acceder a sus datos \n";
+							cout<<"Una contrasenia de la que se acuerde \n";
+						break;
+						case 2:
+							cout<<"----Inicio de Sesion---- \n";
+							cout<<"\n";
+							cout<<"Despues de haber creado un usuario, podra iniciar sesion para agregar, modificar o eliminar los datos de sus clases \n";
+							cout<<"La explicacion completa sobre los datos que necesitara lo encontrara en el menu 'Ayuda' una vez que inicie sesion \n";
+						break;
+						default: cout<<"Favor de seleccionar una opcion valida \n";
+					}
+					cout<<"Desea consultar algo mas \n";
+					cout<<"Si \n";
+					cout<<"No \n";
+					cin>>resp;
+				}while (resp=="si"||resp=="Si"||resp="sI"||resp="SI");
+			case 4:
+				cout<<"----Datos de contacto---- \n";
+				cout<<"\n";
+				cout<<"Ante cualquier pregunta o error, puede comunicarse por los siguientes medios: \n";
+				cout<<"Equipo de Desarrollo \n";
+				cout<<"Jesus Brenel Galicia Aguilar \n";
+				cout<<"correo: jesus.galicia.23e@utzmg.edu.mx \n";
+				cout<<"Lilia Hernandez Santes \n";
+				cout<<"correo: lilia.hernandez.23e@utzmg.edu.mx"
 		}
 	}
 }
