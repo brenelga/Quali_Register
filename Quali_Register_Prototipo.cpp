@@ -217,7 +217,8 @@ int main() {
 				cout<<"Jesus Brenel Galicia Aguilar \n";
 				cout<<"correo: jesus.galicia.23e@utzmg.edu.mx \n";
 				cout<<"Lilia Hernandez Santes \n";
-				cout<<"correo: lilia.hernandez.23e@utzmg.edu.mx"
+				cout<<"correo: lilia.hernandez.23e@utzmg.edu.mx \n";
+     cout<<"Luis Felipe Murillo Gurrola \n";
 		}
 	}
 }
