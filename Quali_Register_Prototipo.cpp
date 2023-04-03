@@ -218,7 +218,14 @@ int main() {
 				cout<<"correo: jesus.galicia.23e@utzmg.edu.mx \n";
 				cout<<"Lilia Hernandez Santes \n";
 				cout<<"correo: lilia.hernandez.23e@utzmg.edu.mx \n";
-     cout<<"Luis Felipe Murillo Gurrola \n";
+           cout<<"Luis Felipe Murillo Gurrola \n";
+           cout<<"correo: luis.murillo.23e@utzmg.edu.mx \n";
+           cout<<"Jessica Elizabeth Vargas Mejía \n";
+           cout<<"correo: jessica.vargas.23e@utzmg.edu.mx \n";
+           cout<<"Jose Joaquin Vargas Mejía \n";
+           cout<<"correo: jose.vargas.23e@utzmg.edu.mx \n";
+         break;
+         default: cout<<"Ingresé una opción válida \n";
 		}
 	}
 }
