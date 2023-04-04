@@ -217,14 +217,20 @@ int main() {
 				cout<<"Jesus Brenel Galicia Aguilar \n";
 				cout<<"correo: jesus.galicia.23e@utzmg.edu.mx \n";
 				cout<<"Lilia Hernandez Santes \n";
-				cout<<"correo: lilia.hernandez.23e@utzmg.edu.mx \n";
-           			cout<<"Luis Felipe Murillo Gurrola \n";
-           			cout<<"correo: luis.murillo.23e@utzmg.edu.mx \n";
-           			cout<<"Jessica Elizabeth Vargas Mejía \n";
-           			cout<<"correo: jessica.vargas.23e@utzmg.edu.mx \n";
-           			cout<<"Jose Joaquin Vargas Mejía \n";
-         		 	cout<<"correo: jose.vargas.23e@utzmg.edu.mx \n";
-         		break;
-		}
+				cout<<"correo: lilia.hernandez.23e@utzmg.edu.mx"
+				cout<<"Luis Felipe Murillo Gurriola \n";
+				cout<<"correo: luis.murillo.23e@utzmg.edu.mx \n";
+				cout<<"Jessica Elizabeth Vargas Mejia \n";
+				cout<<"jessica.vargas.23e@utzmg.edu.mx \n";
+				cout<<"Jose Joaquin Vargas Mejia \n";
+				cout<<"jose.vargas.23e@utzmg.edu.mx \n";
+				break;
+			case 5:
+				cout<<"Para salir del programa escriba <No> \n";
+			break;
+			default: cout<<"Seleccione una opción válida \n";
 	}
+	cout<<"Desea repetir el proceso \n";
+	cin<<resp;
+} while(resp=="Si"||resp=="SI"||resp=="sI"||resp=="si");
 }
