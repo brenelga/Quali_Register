@@ -208,7 +208,7 @@ int main() {
 					cout<<"Si \n";
 					cout<<"No \n";
 					cin>>resp;
-				}while (resp=="si"||resp=="Si"||resp="sI"||resp="SI");
+				}while(resp=="si"||resp=="Si"||resp="sI"||resp="SI");
 			case 4:
 				cout<<"----Datos de contacto---- \n";
 				cout<<"\n";
@@ -217,7 +217,7 @@ int main() {
 				cout<<"Jesus Brenel Galicia Aguilar \n";
 				cout<<"correo: jesus.galicia.23e@utzmg.edu.mx \n";
 				cout<<"Lilia Hernandez Santes \n";
-				cout<<"correo: lilia.hernandez.23e@utzmg.edu.mx"
+				cout<<"correo: lilia.hernandez.23e@utzmg.edu.mx";
 				cout<<"Luis Felipe Murillo Gurriola \n";
 				cout<<"correo: luis.murillo.23e@utzmg.edu.mx \n";
 				cout<<"Jessica Elizabeth Vargas Mejia \n";
